@@ -8,7 +8,7 @@ class App extends Component {
 			count:0
 		}
 	};
-     let showParaFun=()=>{	 
+      showParaFun=()=>{	 
 		 this.setState({count:this.state.count+1})
 	}
     render() {
