@@ -8,16 +8,15 @@ class App extends Component {
 			count:0
 		}
 	};
-     let showParaFun=()=>
-	 {
-		 this.setState({count:this.state.count+1});
-	 }
+     let showParaFun=()=>{	 
+		 this.setState({count:this.state.count+1})
+	}
     render() {
     	return(
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
-				<button id="click" onClick={showParaFun}>showPara</button>
-				{this.count===1?<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> : null}
+				<button id="click" onClick={this.showParaFun}>showPara</button>
+				{this.state.count===1?<p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p> : null}
 				</div>
     	);
     }
